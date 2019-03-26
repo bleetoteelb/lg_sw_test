@@ -1,0 +1,9 @@
+switch to +7
+eat +7
+switch to +1
+eat -1
+eat +8
+switch to +3
+eat -3
+switch to +6
+17

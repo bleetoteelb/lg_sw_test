@@ -1,0 +1,4 @@
+Power ON
+Unknown Error
+Error Code 7
+Finish
