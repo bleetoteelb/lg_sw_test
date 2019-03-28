@@ -1,0 +1,13 @@
+cnt:1seq:1
+cnt:1seq:2
+cnt:2seq:1
+cnt:2seq:2
+cnt:2seq:3
+cnt:2seq:4
+cnt:3seq:1
+cnt:4seq:1
+cnt:4seq:2
+1 2 4 1 2 
+i:3 first:6 second:7 third:7 fourth:5
+i:4 first:5 second:7 third:7 fourth:3
+7
