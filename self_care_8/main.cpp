@@ -8,6 +8,7 @@ struct bug{
 	bug(int a,int b):x(a),y(b){};
 };
 
+// 작은게 먼저
 struct cmp{
 	bool operator()(bug a, bug b){
 		if(a.x>b.x){
@@ -23,7 +24,7 @@ int sol;			//	정답
 priority_queue< bug, vector<bug>, cmp> bug_pq;
 vector<bug> bug_v;
 
-// 작은게 먼저
+
 
 
 void Input(void){
