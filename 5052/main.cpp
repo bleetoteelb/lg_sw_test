@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <iostream>
 #include <stack>
 #include <string.h>
 
@@ -17,43 +16,43 @@ struct number{
 };
 
 bool num_find(number *first){
-    printf("find start\n");
-    number cur = first;
+    //printf("find start\n");
+    number* cur = first;
 
     for(int i=0;num[i]!='\0';i++){
-        printf("num[i]: %d\n",num[i]-'0');
-        if(cur.isLeaf) {
-            printf("leaf true\n");
+        //printf("num[i]: %d\n",num[i]-'0');
+        if(cur->isLeaf) {
+            //printf("leaf true\n");
             return true;
         }
         else{
             //printf("not leaf\n");
-            if(cur.num_book[num[i]-'0'] == NULL){
-                printf("null true\n");
+            if(cur->num_book[num[i]-'0'] == NULL){
+                //printf("null true\n");
                 return false;
             }
-            cur = cur.num_book[num[i]-'0'];
+            cur = cur->num_book[num[i]-'0'];
         }
 
     }
-    printf("end true\n");
+    //printf("end true\n");
     return true;
 
 }
 
 void num_insert(number *first){
-    printf("insert start\n");
-    number cur = first;
+    //printf("insert start\n");
+    number* cur = first;
 
     for(int i=0;num[i]!='\0';i++){
-        printf("num[i]: %d\n",num[i]-'0');
-        if(cur.num_book[num[i]-'0'] == NULL){
-            cur.num_book[num[i]-'0'] = new number(true);
-            if(cur.num_book[num[i]-'0'] != NULL) printf("not null\n");
-            cur.isLeaf = false;
+        //printf("num[i]: %d\n",num[i]-'0');
+        if(cur->num_book[num[i]-'0'] == NULL){
+            cur->num_book[num[i]-'0'] = new number(true);
+            //if(cur->num_book[num[i]-'0'] != NULL) printf("not null\n");
+            cur->isLeaf = false;
         }
-        printf("go next\n");
-        cur = cur.num_book[num[i]-'0'];
+        //printf("go next\n");
+        cur = cur->num_book[num[i]-'0'];
     }
 
     return;
