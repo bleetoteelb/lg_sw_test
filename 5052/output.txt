@@ -1,0 +1,8 @@
+find start
+num[i]: 9
+leaf true
+NO
+find start
+num[i]: 9
+leaf true
+NO
