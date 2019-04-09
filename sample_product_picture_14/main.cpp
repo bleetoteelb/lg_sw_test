@@ -11,12 +11,14 @@ struct st{
 //st A[50010];
 
 bool compare(st a, st b){
-    
     return a.X < b.X;
 }
 
 //priority_queue<st,vector<st>,compare> A;
 vector<st> A;
+int rearr[50010]={0,};
+int check[50010]={0,};
+int check_cnt=0;
 
 void InputData(){
 	cin >> N;
