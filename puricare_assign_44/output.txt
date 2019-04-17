@@ -1,0 +1,54 @@
+r: 0 c: 0 val: 11
+east : 0
+r: 0 c: 1 val: 6
+south
+r: 1 c: 1 val: 9
+east : 0
+r: 1 c: 2 val: 6
+south
+r: 2 c: 2 val: 12
+west
+r: 2 c: 1 val: 10
+west
+r: 2 c: 0 val: 1
+north
+r: 1 c: 0 val: 7
+south
+r: 3 c: 0 val: 13
+r: 0 c: 2 val: 11
+east : 0
+r: 0 c: 3 val: 6
+south
+r: 1 c: 3 val: 13
+r: 0 c: 4 val: 3
+south
+r: 1 c: 4 val: 5
+south
+r: 2 c: 4 val: 13
+r: 0 c: 5 val: 10
+r: 0 c: 6 val: 6
+south
+r: 1 c: 6 val: 5
+south
+r: 2 c: 6 val: 5
+south
+r: 3 c: 6 val: 13
+r: 1 c: 5 val: 15
+r: 2 c: 3 val: 7
+south
+r: 3 c: 3 val: 8
+west
+r: 3 c: 2 val: 10
+west
+r: 3 c: 1 val: 11
+r: 2 c: 5 val: 7
+south
+r: 3 c: 5 val: 12
+west
+r: 3 c: 4 val: 10
+1
+2
+0
+8
+8
+9

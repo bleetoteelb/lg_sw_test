@@ -1,0 +1,32 @@
+34 42
+42 46
+42 70
+51 81
+68 85
+118 125
+132 144
+121 152
+126 155
+168 199
+183 209
+187 217
+194 217
+207 237
+230 300
+
+i is 42 pnum[i]: 1
+i is 46 pnum[i]: 1
+i is 70 pnum[i]: 1
+i is 81 pnum[i]: 2
+i is 85 pnum[i]: 2
+i is 125 pnum[i]: 3
+i is 144 pnum[i]: 4
+i is 152 pnum[i]: 4
+i is 155 pnum[i]: 4
+i is 199 pnum[i]: 5
+i is 209 pnum[i]: 5
+i is 217 pnum[i]: 5
+i is 217 pnum[i]: 5
+i is 237 pnum[i]: 6
+i is 300 pnum[i]: 6
+6
