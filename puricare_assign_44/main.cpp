@@ -1,3 +1,4 @@
+// <done>
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -32,25 +33,15 @@ void InputData(){
 int scan(int r, int c){
 	int sum=1;
 	map_info[r][c].visit = true;
-	cout << "r: " << r << " c: " << c << " val: " << map_info[r][c].val << endl;
-	// west
-	if(c>0 && (map_info[r][c].val & 1)==0 && !map_info[r][c-1].visit){ cout << "west" << endl;
-		sum+= scan(r,c-1); 
-	}
-	// east
-	if(c<H-1 && (map_info[r][c].val & 4)==0 && !map_info[r][c+1].visit){ cout << "east : " << (map_info[r][c].val & 4) <<endl;
-		sum+= scan(r,c+1);
-	}
 
+	// west
+	if(c>0 && (map_info[r][c].val & 1)==0 && !map_info[r][c-1].visit) sum+= scan(r,c-1); 
+	// east
+	if(c<W-1 && (map_info[r][c].val & 4)==0 && !map_info[r][c+1].visit) sum+= scan(r,c+1);
 	// north
-	if(r>0 && (map_info[r][c].val & 2)==0 && !map_info[r-1][c].visit){ cout << "north" << endl;
-		sum+= scan(r-1,c);
-	}
-	
+	if(r>0 && (map_info[r][c].val & 2)==0 && !map_info[r-1][c].visit) sum+= scan(r-1,c);
 	// south
-	if(r<W-1 && (map_info[r][c].val & 8)==0 && !map_info[r+1][c].visit){ cout << "south" << endl;
-		sum+= scan(r+1,c);
-	}
+	if(r<H-1 && (map_info[r][c].val & 8)==0 && !map_info[r+1][c].visit) sum+= scan(r+1,c);
 	return sum;
 }
 
@@ -68,10 +59,6 @@ int main(){
 			}
 		}
 	}
-	cout << (11 & 1) << endl;
-	cout << (11 & 2) << endl;
-	cout << (11 & 4) << endl;
-	cout << (11 & 8) << endl;
 
 	int size=cnt.size();
 	for(int i=0;i<size;i++) ans.area = ans.area < cnt[i] ? cnt[i] : ans.area;
