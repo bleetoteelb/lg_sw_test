@@ -1,9 +1,8 @@
 //<done>
 #include <iostream>
+#include <queue>
 
 using namespace std;
-
-
 
 int main(){
     int nums[1001]={0,};
